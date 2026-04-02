@@ -2535,8 +2535,7 @@
         </div>
       </article>
 
-
-    <div class="reveal" style="text-align:center">
+    <div class="reveal" style="text-align:center; margin-top: 12px;">
       <a href="#join" class="btn-primary">Join the First Circle — Get Early Access</a>
     </div>
   </section>
@@ -3075,7 +3074,7 @@
           return parseInt(b.getAttribute('data-tier') || 0) - parseInt(a.getAttribute('data-tier') || 0);
         } else { // latest
           return parseInt(b.getAttribute('data-week') || 0) - parseInt(a.getAttribute('data-week') || 0);
-        }
+        }      
       });
       // Re-append in sorted order
       visible.forEach(function(c) { grid.appendChild(c); });
