@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://nephilimchronicles.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Codex section -->
+  <url>
+    <loc>https://nephilimchronicles.com/#codex</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Featured entry: Azazel -->
+  <url>
+    <loc>https://nephilimchronicles.com/#featured</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Lore section -->
+  <url>
+    <loc>https://nephilimchronicles.com/#lore</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Roadmap -->
+  <url>
+    <loc>https://nephilimchronicles.com/#roadmap</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- About / FAQ -->
+  <url>
+    <loc>https://nephilimchronicles.com/#faq</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Join / Waitlist -->
+  <url>
+    <loc>https://nephilimchronicles.com/#join</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Codex Entry Pages — Week 5-6 Drop (April 2026) -->
+  <url>
+    <loc>https://nephilimchronicles.com/codex/sariel</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/griffin-kin</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/mastema</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/asmodeus</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/urakiba</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/ramiel</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nephilimchronicles.com/codex/naamah</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+</urlset>

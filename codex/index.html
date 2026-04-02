@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codex Gallery — All Entries | Nephilim Chronicles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #06050a; color: #b8b0c8; font-family: 'EB Garamond', serif;
+           min-height: 100vh; padding: 40px 24px; }
+    h1 { font-family: 'Cinzel Decorative', serif; font-size: 22px; color: #c9a84c;
+          text-align: center; margin-bottom: 8px; }
+    .subtitle { font-family: Cinzel, serif; font-size: 9px; letter-spacing: 0.4em;
+                text-transform: uppercase; color: #7a7090; text-align: center;
+                margin-bottom: 32px; }
+    .stats { text-align:center; font-family:Cinzel,serif; font-size:10px;
+              letter-spacing:0.3em; color:#7a6330; margin-bottom:32px; }
+    .filter-bar { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:32px; }
+    .filter-btn { font-family:Cinzel,serif; font-size:8px; letter-spacing:0.3em;
+                  text-transform:uppercase; padding:8px 20px; border:1px solid rgba(46,37,69,0.8);
+                  background:none; color:#7a7090; cursor:pointer; transition:all 0.2s; }
+    .filter-btn.active, .filter-btn:hover { border-color:#c9a84c; color:#c9a84c; }
+    .back-btn { display:inline-block; font-family:Cinzel,serif; font-size:9px; letter-spacing:0.3em;
+                text-transform:uppercase; color:#7a6330; text-decoration:none; margin-bottom:32px;
+                display:block; text-align:center; }
+    .back-btn:hover { color:#c9a84c; }
+    .grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .entry-count { font-family:Cinzel,serif; font-size:10px; letter-spacing:0.2em;
+                   color:#7a7090; text-align:center; margin-top:32px; }
+  </style>
+</head>
+<body>
+  <h1>Codex Gallery</h1>
+  <p class="subtitle">Nephilim Chronicles · Internal Preview · All Entries</p>
+  <p class="stats">10 FREE &nbsp;·&nbsp; 24 LOCKED &nbsp;·&nbsp; 34 TOTAL ENTRIES</p>
+  <a href="../index.html" class="back-btn">← Back to Main Site</a>
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterGallery('all',this)">All</button>
+    <button class="filter-btn" onclick="filterGallery('free',this)">Free Only</button>
+    <button class="filter-btn" onclick="filterGallery('locked',this)">Locked</button>
+    <button class="filter-btn" onclick="filterGallery('watcher',this)">Watchers</button>
+    <button class="filter-btn" onclick="filterGallery('giant',this)">Giants</button>
+    <button class="filter-btn" onclick="filterGallery('beast',this)">Beasts</button>
+    <button class="filter-btn" onclick="filterGallery('spirit',this)">Spirits</button>
+  </div>
+  <div class="grid" id="gallery">
+    
+    <a href="azazel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/Azazel_Tragic_nobility_corrupted_by_0ddb5ab3-6d5f-4401-a3ca-4cff64b09868_3.png" alt="Azazel" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Azazel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Forge-Master · Imprisoned in Dudael</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="samyaza.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/samyaza-hero.png" alt="Samyaza" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Samyaza</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Oath-Master · Leader of the 200</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="lilith.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_LILITH_Night-Terror_The_Desolation-Dweller_Tall_fem_3b6e1b13-aeb1-4269-ac50-dcaba6f114b9_2.png" alt="Lilith" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · SPIRIT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Lilith</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Night-Terror · Queen of Desolation</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="abaddon.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/ABADDON_Angel_of_the_Abyss_Apollyon_the_Destroyer_T_d7e7b15f-0ddb-4b4c-8005-c3bda656e6a6_2.png" alt="Abaddon" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · SPIRIT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Abaddon</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Angel of the Abyss · Destroyer</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="leviathan.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_LEVIATHAN_The_Primordial_Sea-Dragon_Colossal_sea-dr_a65829e1-f8e1-4c1d-952f-92c94ae2e52a_1.png" alt="Leviathan" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Leviathan</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Primordial Sea-Dragon · Chaos Serpent</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="gadreel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Gadreel_fallen_celestial_of_betrayal_and_first_corr_7f38f295-ad10-4a5f-9e6d-e5fc3aba86d2_3.png" alt="Gadreel" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Gadreel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Deceiver · War-Teacher · First Corruptor</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="goliath.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/goliath-hero.png" alt="Goliath" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Goliath</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Champion of Gath · Six-Cubit Terror</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="the-rephaim.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/tHE_REPHAIM__Classification_Second_Generation_Nephi_0321b124-308c-4d68-a57c-3fc160013f24_2.png" alt="The Rephaim" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Rephaim</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Ghost-Giants · Spirits of the Nephilim</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="the-manticore.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/manticore_lion_with_human_face_and_a__24796256-1eab-4620-aa17-a147aaa78a95_3.png" alt="The Manticore" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Manticore</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Persian Desert Hunter · Man-Eater</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="fenris.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/fenris-hero.png" alt="Fenris" style="width:100%;height:70%;object-fit:cover;display:block;" loading="lazy" onerror="this.style.display='none'"/>
+      
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Fenris</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">World-Ender · Bound Chaos Wolf [Norse]</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(20,40,20,0.85);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#60b040">FREE</div>
+    </a>
+    <a href="baraqiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/codex-back-cover.png" alt="Baraqiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Baraqiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Lightning of God · Imprisoned Storm-Caller</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="chimera.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/CHIMERA_TYPHONIS_Multi-Animal_Hybrid_G_32af0d70-bbf6-4de3-a665-6fa978d1deb5_2.png" alt="The Chimera Typhonis" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Chimera Typhonis</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Lion · Goat · Serpent · Fire-Breather</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="araqiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/araqiel-hero.png" alt="Araqiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Araqiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Earth-Signs of God · Geological Force</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="anakim.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/anakim-hero.png" alt="The Anakim" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Anakim</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Sons of Anak · Land-Holders of Canaan</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="nephilim warriors.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/nephilim-warriors-hero.png" alt="The Nephilim Warriors" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Nephilim Warriors</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">First-Born Giants · Antediluvian Warrior Caste</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="harpy.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/harpy-hero.png" alt="The Harpy" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Harpy</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Wind-Demon · Storm Harbinger</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="kasdeja.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/kasdeja.png" alt="Kasdeja" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Kasdeja</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Serpent-Master · Spirit-Binder</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="penemue.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/PENEMUE_The_Knowledge-Corruptor_32814cb8-481c-4534-9fa3-4516699a080a_3.png" alt="Penemue" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Penemue</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Knowledge-Corruptor · Scribe of Deception</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="og-of-bashan.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Og_of_Bashan_last_giant_king_and_remnant_of_the_Rep_1ea1e9ef-e525-464f-a917-17150e62a918_1.png" alt="Og of Bashan" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Og of Bashan</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Last King of the Rephaim · Iron-Bedded Survivor</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="emim.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/THE_EMIM_The_Fearsome_Ones_ee494037-bd83-48d9-a4a9-249e5e81b03d_0.png" alt="The Emim" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Emim</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">The Fearsome Ones · Erased Giant Race</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="kokabiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/kokabiel.png" alt="Kokabiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Kokabiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Star-Prince · Celestial Navigator</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="tamiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Tamiel_fallen_Watcher_of_deep_mysteries_and_forbidd_cf1c0c35-b155-4945-bc00-c94c0cf1f235_0.png" alt="Tamiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Tamiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Deep-Commander · Forbidden Physician</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="danel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_DANEL_God_Is_My_Judge_Fallen_Arbiter_Fallen_Watcher_62645b5d-04f5-4e73-967a-ce36f6a47b6b_0.png" alt="Danel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Danel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Solar Judge · Fallen Arbiter</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="zamzummim.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/codex-back-cover.png" alt="The Zamzummim" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · GIANT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">The Zamzummim</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">The Murmurers · Erased by Divine Decree</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="armaros.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/ARMAROS_The_Cursed_One_Counter-Enchanter_Fallen_Wat_55c59bc9-bd7c-49ad-9b28-aaa184bce834_3.png" alt="Armaros" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Armaros</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Counter-Enchanter · Resolver of Seals</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="shamsiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_SHAMSIEL_Sun_of_God_Commander_of_365_Hosts_Fallen_W_36ba7ca2-5cc5-450b-8cd8-eb6bc8ae3945_0.png" alt="Shamsiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Shamsiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Solar Commander · Sun of God</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="ananel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/ananel.png" alt="Ananel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Ananel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Grace of God · Oath-Keeper of Hermon</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="asbeel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/asbeel.png" alt="Asbeel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#c9a84c;margin-bottom:4px">T III · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Asbeel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Deserter of God · Architect of the Fall</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="ezeqeel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Ezeqeel_Watcher_of_hidden_celestial_mechanics_Role__dfd50761-36ed-42d3-9dc3-157edc306a8c_1.png" alt="Ezeqeel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Ezeqeel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">God Strengthens · Cloud-Knowledge Reader</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="turiel.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Turiel_vigilant_Watcher_of_thresholds_and_sacred_bo_49b7ad4c-5f06-45b6-bd90-e399c8167e3d_2.png" alt="Turiel" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Turiel</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Rock of God · Guardian of Thresholds</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="yomyael.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/futurians_Yomyael_Watcher_of_day_signs_and_sacred_timing_raw__c8de726b-f05f-45c5-8f21-68e8b29b4cb7_1.png" alt="Yomyael" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#5a70a0;margin-bottom:4px">T II · WATCHER</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Yomyael</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Day of God · Sacred Timing</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="behemoth.html" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/codex-back-cover.png" alt="Behemoth" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · BEAST</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Behemoth</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Primordial Land Beast · First of God's Works</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="#" style="cursor:default" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/codex-back-cover.png" alt="Mastema" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · SPIRIT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Mastema</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Prince of Accusation · Accuser</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+    <a href="#" style="cursor:default" style="display:block;text-decoration:none;color:inherit;position:relative;
+       background:#0d0b14;border:1px solid rgba(46,37,69,0.8);overflow:hidden;
+       transition:border-color 0.3s,transform 0.3s;aspect-ratio:3/4;flex-shrink:0;width:200px"
+       onmouseover="if(!this.querySelector('.locked-overlay')){this.style.borderColor='#c9a84c';this.style.transform='translateY(-4px)'}"
+       onmouseout="this.style.borderColor='rgba(46,37,69,0.8)';this.style.transform='translateY(0)'">
+      <img src="../images/codex-back-cover.png" alt="Asmodeus" style="width:100%;height:70%;object-fit:cover;display:block;opacity:0.22;filter:brightness(0.3) grayscale(0.5)" loading="lazy" onerror="this.style.display='none'"/>
+      <div style="position:absolute;inset:0;background:rgba(6,5,10,0.75);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:3"><span style="font-size:24px">🔒</span><span style="font-family:Cinzel,serif;font-size:8px;letter-spacing:0.3em;color:#7a7090">FIRST CIRCLE</span></div>
+      <div style="padding:12px;position:relative;z-index:4">
+        <p style="font-family:Cinzel,serif;font-size:7px;letter-spacing:0.35em;text-transform:uppercase;
+           color:#7a1e1e;margin-bottom:4px">T IV · SPIRIT</p>
+        <p style="font-family:'Cinzel Decorative',serif;font-size:13px;color:#ede8f5;line-height:1.2;margin-bottom:4px">Asmodeus</p>
+        <p style="font-family:'EB Garamond',serif;font-size:12px;color:#7a7090;line-height:1.4">Lord of Wrath · Seven-Fold Destroyer</p>
+      </div>
+      <div style="position:absolute;top:8px;right:8px;background:rgba(122,30,30,0.8);padding:3px 8px;font-family:Cinzel,serif;font-size:7px;letter-spacing:0.2em;color:#c9a84c">LOCKED</div>
+    </a>
+  </div>
+  <p class="entry-count" id="count">34 entries shown</p>
+  <script>
+    function filterGallery(type, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cards = document.querySelectorAll('#gallery > a');
+      let shown = 0;
+      cards.forEach(card => {
+        const tier = card.querySelector('p')?.textContent?.toLowerCase() || '';
+        const isLocked = card.querySelector('[style*="FIRST CIRCLE"]');
+        let show = false;
+        if (type === 'all') show = true;
+        else if (type === 'free') show = !isLocked;
+        else if (type === 'locked') show = !!isLocked;
+        else show = tier.includes(type);
+        card.style.display = show ? 'block' : 'none';
+        if (show) shown++;
+      });
+      document.getElementById('count').textContent = shown + ' entries shown';
+    }
+  </script>
+</body>
+</html>

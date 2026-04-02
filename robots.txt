@@ -1,0 +1,11 @@
+# Nephilim Chronicles — robots.txt
+# Allow all crawlers full access
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nephilimchronicles.com/sitemap.xml
+
+# Crawl-delay (optional — remove if you want max crawl speed)
+Crawl-delay: 1
