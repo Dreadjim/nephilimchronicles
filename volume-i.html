@@ -22,7 +22,7 @@
     }
     * { box-sizing:border-box; }
     body {
-      margin:0; background:radial-gradient(circle at top, rgba(98,26,38,0.14), transparent 30%), var(--bg);
+      margin:0; background:radial-gradient(circle at top, rgba(125,31,40,0.18), transparent 28%), radial-gradient(circle at 50% 0%, rgba(201,168,76,0.06), transparent 34%), var(--bg);
       color:var(--text); font-family:'EB Garamond',serif; line-height:1.75;
     }
     a { color:inherit; }
@@ -34,7 +34,8 @@
     .nav-logo { font-family:'Cinzel Decorative',serif; color:var(--gold); text-decoration:none; font-size:18px; }
     .nav-links { display:flex; gap:22px; list-style:none; padding:0; margin:0; font-family:'Cinzel',serif; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); }
     .nav-links a { text-decoration:none; }
-    .hero { padding:84px 0 64px; text-align:center; }
+    .hero { padding:100px 0 72px; text-align:center; position:relative; }
+    .hero::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(201,168,76,0.03), transparent 22%, transparent 78%, rgba(125,31,40,0.05)); pointer-events:none; }
     .eyebrow { font-family:'Cinzel',serif; text-transform:uppercase; letter-spacing:0.35em; font-size:11px; color:var(--gold-dim); margin-bottom:18px; }
     h1 { font-family:'Cinzel Decorative',serif; color:var(--white); font-size:54px; line-height:1.1; margin:0 0 18px; }
     h1 span, h2 span { color:var(--gold); }
@@ -49,7 +50,7 @@
     .section-title { font-family:'Cinzel Decorative',serif; font-size:34px; line-height:1.2; color:var(--white); margin:0 0 18px; }
     .section-subtitle { max-width:920px; font-size:21px; color:#d8cfdf; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:22px; margin-top:30px; }
-    .card { background:linear-gradient(180deg, rgba(23,19,32,0.95), rgba(15,12,22,0.95)); border:1px solid rgba(46,37,69,0.9); padding:28px; }
+    .card { background:linear-gradient(180deg, rgba(23,19,32,0.95), rgba(15,12,22,0.95)); border:1px solid rgba(46,37,69,0.9); padding:28px; box-shadow:0 24px 60px rgba(0,0,0,0.28); }
     .card h3 { margin:0 0 12px; font-family:'Cinzel',serif; font-size:14px; letter-spacing:0.14em; text-transform:uppercase; color:var(--white); }
     .card p, .body { font-size:20px; color:var(--text); }
     .list { margin:18px 0 0; padding-left:20px; }
@@ -79,7 +80,7 @@
       <p class="eyebrow">The First Sealed Volume</p>
       <h1>Forbidden Codex: <span>Nephilim Chronicles</span> — Volume I</h1>
       <p class="subtitle">Fallen Angels, Watchers, and the Creatures of the First World</p>
-      <p class="hero-copy">The first physical artifact of the Forbidden Codex — gathering the Watchers, the Nephilim, giant bloodlines, hybrid creatures, and the dark records of the first world into a single curated volume.</p>
+      <p class="hero-copy">The first physical artifact of the Forbidden Codex — gathering the Watchers, the Nephilim, giant bloodlines, hybrid creatures, and the dark records of the first world into a single curated volume. The archive opens online. The sealed reading descends into print.</p>
       <div class="cta-row">
         <a href="#status" class="btn btn-primary">Get Release Updates</a>
         <a href="/" class="btn btn-secondary">Return to the Archive</a>
@@ -110,11 +111,11 @@
       <div class="grid">
         <div class="card">
           <h3>The archive opens. The volume descends.</h3>
-          <p>The website is the living archive. It allows readers to move between entities, classifications, source traditions, and connected records across the wider codex. Volume I is the first sealed print artifact — shaped for atmosphere, interpretation, consequence, and sequence.</p>
+          <p>The website is the living archive. It allows readers to move between entities, classifications, source traditions, and connected records across the wider codex. Volume I is the first sealed print artifact — shaped for atmosphere, interpretation, consequence, and sequence. It is not the archive duplicated. It is the archive transformed into a deeper reading experience.</p>
         </div>
         <div class="card">
           <h3>Why this volume exists</h3>
-          <p>Some records are best approached as entries. Others demand slower reading, stronger sequencing, and greater interpretive gravity. Volume I exists to gather the first major collection of the Forbidden Codex into a form that can be read as an artifact rather than merely browsed as a system.</p>
+          <p>Some records are best approached as entries. Others demand slower reading, stronger sequencing, and greater interpretive gravity. Volume I exists to gather the first major collection of the Forbidden Codex into a form that can be held as an artifact rather than merely browsed as a system.</p>
         </div>
         <div class="card">
           <h3>The first artifact of a larger franchise</h3>
