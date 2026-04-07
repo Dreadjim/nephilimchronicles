@@ -29,7 +29,7 @@
   ═══════════════════════════════════════════════ -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Forbidden Codex | Fallen Angels, Nephilim, Watchers & Pre-Flood Lore" />
-  <meta name="twitter:description" content="A premium dark-mythic archive of fallen angels, Nephilim, Watchers, biblical giants, and pre-flood horrors. Explore Nephilim Chronicles within the Forbidden Codex." />
+  <meta name="twitter:description" content="A premium dark-mythic archive of fallen angels, Nephilim, Watchers, biblical giants, and pre-flood horrors. Begin with Nephilim Chronicles within the Forbidden Codex." />
   <meta name="twitter:image" content="https://forbiddencodex.com/images/azazel.png" />
 
   <!-- ═══════════════════════════════════════════════
@@ -217,6 +217,32 @@
       color: var(--ash);
       font-size: 20px;
     }
+
+    .mobile-nav-panel {
+      display:none;
+      position:absolute;
+      top:72px;
+      right:20px;
+      width:min(82vw, 320px);
+      background:rgba(10,8,16,0.98);
+      border:1px solid rgba(201,168,76,0.22);
+      box-shadow:0 24px 60px rgba(0,0,0,0.45);
+      padding:18px;
+      z-index:50;
+    }
+    .mobile-nav-panel.open { display:block; }
+    .mobile-nav-panel a {
+      display:block;
+      padding:12px 4px;
+      font-family:'Cinzel', serif;
+      font-size:10px;
+      letter-spacing:0.28em;
+      text-transform:uppercase;
+      color:var(--mist);
+      text-decoration:none;
+      border-bottom:1px solid rgba(46,37,69,0.28);
+    }
+    .mobile-nav-panel a:last-child { border-bottom:none; color:var(--gold); }
 
     @media (max-width: 768px) {
       .nav-links, .nav-cta { display: none; }
@@ -1633,7 +1659,16 @@
       <li><a href="#faq">About</a></li>
     </ul>
     <a href="#join" class="nav-cta">Enter the Archive</a>
-    <button class="nav-mobile-btn" aria-label="Open menu" onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">☰</button>
+    <button class="nav-mobile-btn" aria-label="Open menu" onclick="document.getElementById('mobileNavPanel').classList.toggle('open')">☰</button>
+    <div id="mobileNavPanel" class="mobile-nav-panel" aria-label="Mobile navigation">
+      <a href="#codex" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">Codex</a>
+      <a href="#lore" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">Lore</a>
+      <a href="#roadmap" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">Roadmap</a>
+      <a href="/volume-i.html" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">Volume I</a>
+      <a href="#artist" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">The Creator</a>
+      <a href="#faq" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">About</a>
+      <a href="#join" onclick="document.getElementById('mobileNavPanel').classList.remove('open')">Enter the Archive</a>
+    </div>
   </nav>
 
 
@@ -1672,7 +1707,7 @@
         Forbidden <span>Codex</span>
       </h1>
 
-      <p class="hero-sub reveal reveal-delay-2">Current Collection · Nephilim Chronicles</p>
+      <p class="hero-sub reveal reveal-delay-2">Nephilim Chronicles is the first collection now unfolding within Forbidden Codex</p>
 
       <p class="hero-desc reveal reveal-delay-2">
         A premium dark-mythic archive of fallen angels, Nephilim, Watchers,<br>biblical giants, and pre-flood horrors.
