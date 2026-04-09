@@ -2847,10 +2847,9 @@
         id="waitlist-form"
         action="https://buttondown.com/api/emails/embed-subscribe/dreadjim"
         method="POST"
-        onsubmit="handleFormSubmit(event)"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.com/dreadjim', 'popupwindow')"
       >
-        <input type="hidden" name="_subject" value="New Forbidden Codex signup — Archive / Volume I" />
-        <input type="hidden" name="_next" value="thanks" />
         <div class="form-row">
           <input
             type="email"
@@ -2865,8 +2864,8 @@
         <p class="form-notice">Free to join · Volume I release updates · No payment · Unsubscribe any time</p>
       </form>
 
-      <div class="form-success" id="form-success">
-        <em>✦ Welcome to the First Circle. The archive will find you.</em>
+      <div class="form-success" id="form-success" style="display:block; margin-top:12px; background:none; border:none; padding:0; font-size:14px; color:var(--mist);">
+        <em>Submitting opens the archive signup in a secure popup window.</em>
       </div>
       </div>
 
